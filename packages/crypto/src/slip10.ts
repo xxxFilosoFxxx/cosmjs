@@ -1,5 +1,5 @@
-import { fromHex, toAscii } from "@cosmjs/encoding";
-import { Uint32, Uint53 } from "@cosmjs/math";
+import { fromHex, toAscii } from "@filosof-copilot-cosmjs/encoding";
+import { Uint32, Uint53 } from "@filosof-copilot-cosmjs/math";
 import BN from "bn.js";
 import elliptic from "elliptic";
 

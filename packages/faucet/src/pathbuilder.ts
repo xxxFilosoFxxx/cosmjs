@@ -1,4 +1,4 @@
-import { HdPath, stringToPath } from "@cosmjs/crypto";
+import { HdPath, stringToPath } from "@filosof-copilot-cosmjs/crypto";
 
 export type PathBuilder = (account_index: number) => HdPath;
 

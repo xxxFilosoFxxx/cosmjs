@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { toBase64, toHex } from "@cosmjs/encoding";
-import { JsonRpcRequest } from "@cosmjs/json-rpc";
+import { toBase64, toHex } from "@filosof-copilot-cosmjs/encoding";
+import { JsonRpcRequest } from "@filosof-copilot-cosmjs/json-rpc";
 
 import { smallIntToApi } from "../../inthelpers";
 import { createJsonRpcRequest } from "../../jsonrpc";

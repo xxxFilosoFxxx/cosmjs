@@ -1,7 +1,7 @@
-import { encodeSecp256k1Pubkey, makeCosmoshubPath, pubkeyToAddress, Secp256k1Pubkey } from "@cosmjs/amino";
-import { HdPath, Secp256k1Signature } from "@cosmjs/crypto";
-import { fromUtf8 } from "@cosmjs/encoding";
-import { assert } from "@cosmjs/utils";
+import { encodeSecp256k1Pubkey, makeCosmoshubPath, pubkeyToAddress, Secp256k1Pubkey } from "@filosof-copilot-cosmjs/amino";
+import { HdPath, Secp256k1Signature } from "@filosof-copilot-cosmjs/crypto";
+import { fromUtf8 } from "@filosof-copilot-cosmjs/encoding";
+import { assert } from "@filosof-copilot-cosmjs/utils";
 import Transport from "@ledgerhq/hw-transport";
 import CosmosApp, {
   AddressAndPublicKeyResponse,

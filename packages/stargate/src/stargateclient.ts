@@ -1,15 +1,15 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { addCoins } from "@cosmjs/amino";
-import { toHex } from "@cosmjs/encoding";
-import { Uint53 } from "@cosmjs/math";
+import { addCoins } from "@filosof-copilot-cosmjs/amino";
+import { toHex } from "@filosof-copilot-cosmjs/encoding";
+import { Uint53 } from "@filosof-copilot-cosmjs/math";
 import {
   CometClient,
   connectComet,
   HttpEndpoint,
   HttpProxyEndpoint,
   toRfc3339WithNanoseconds,
-} from "@cosmjs/tendermint-rpc";
-import { assert, sleep } from "@cosmjs/utils";
+} from "@filosof-copilot-cosmjs/tendermint-rpc";
+import { assert, sleep } from "@filosof-copilot-cosmjs/utils";
 import { MsgData, TxMsgData } from "cosmjs-types/cosmos/base/abci/v1beta1/abci";
 import { Coin } from "cosmjs-types/cosmos/base/v1beta1/coin";
 import { QueryDelegatorDelegationsResponse } from "cosmjs-types/cosmos/staking/v1beta1/query";

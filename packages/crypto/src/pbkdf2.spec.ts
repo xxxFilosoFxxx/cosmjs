@@ -1,4 +1,4 @@
-import { fromHex, toAscii, toUtf8 } from "@cosmjs/encoding";
+import { fromHex, toAscii, toUtf8 } from "@filosof-copilot-cosmjs/encoding";
 
 import {
   getNodeCrypto,

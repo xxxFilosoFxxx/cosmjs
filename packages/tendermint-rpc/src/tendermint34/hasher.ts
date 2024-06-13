@@ -1,4 +1,4 @@
-import { Sha256, sha256 } from "@cosmjs/crypto";
+import { Sha256, sha256 } from "@filosof-copilot-cosmjs/crypto";
 
 import {
   encodeBlockId,

@@ -1,5 +1,5 @@
 {
-  "name": "@cosmjs/stream",
+  "name": "@filosof-copilot-cosmjs/stream",
   "version": "0.32.3",
   "description": "Utility functions for producing and consuming streams",
   "contributors": [

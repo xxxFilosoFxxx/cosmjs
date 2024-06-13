@@ -1,4 +1,4 @@
-import { Int53 } from "@cosmjs/math";
+import { Int53 } from "@filosof-copilot-cosmjs/math";
 
 import { assertString } from "./tendermint34/encodings";
 

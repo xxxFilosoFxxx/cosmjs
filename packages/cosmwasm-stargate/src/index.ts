@@ -35,5 +35,5 @@ export {
 } from "./signingcosmwasmclient";
 
 // Re-exported because this is part of the CosmWasmClient/SigningCosmWasmClient APIs
-export { Attribute, DeliverTxResponse, Event, IndexedTx } from "@cosmjs/stargate";
-export { HttpEndpoint } from "@cosmjs/tendermint-rpc";
+export { Attribute, DeliverTxResponse, Event, IndexedTx } from "@filosof-copilot-cosmjs/stargate";
+export { HttpEndpoint } from "@filosof-copilot-cosmjs/tendermint-rpc";

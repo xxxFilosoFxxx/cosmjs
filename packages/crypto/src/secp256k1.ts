@@ -1,4 +1,4 @@
-import { fromHex, toHex } from "@cosmjs/encoding";
+import { fromHex, toHex } from "@filosof-copilot-cosmjs/encoding";
 import BN from "bn.js";
 import elliptic from "elliptic";
 

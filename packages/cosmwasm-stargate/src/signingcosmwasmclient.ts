@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { encodeSecp256k1Pubkey, makeSignDoc as makeSignDocAmino } from "@cosmjs/amino";
-import { sha256 } from "@cosmjs/crypto";
-import { fromBase64, toHex, toUtf8 } from "@cosmjs/encoding";
-import { Int53, Uint53 } from "@cosmjs/math";
+import { encodeSecp256k1Pubkey, makeSignDoc as makeSignDocAmino } from "@filosof-copilot-cosmjs/amino";
+import { sha256 } from "@filosof-copilot-cosmjs/crypto";
+import { fromBase64, toHex, toUtf8 } from "@filosof-copilot-cosmjs/encoding";
+import { Int53, Uint53 } from "@filosof-copilot-cosmjs/math";
 import {
   EncodeObject,
   encodePubkey,
@@ -12,7 +12,7 @@ import {
   OfflineSigner,
   Registry,
   TxBodyEncodeObject,
-} from "@cosmjs/proto-signing";
+} from "@filosof-copilot-cosmjs/proto-signing";
 import {
   AminoTypes,
   Attribute,
@@ -31,9 +31,9 @@ import {
   MsgWithdrawDelegatorRewardEncodeObject,
   SignerData,
   StdFee,
-} from "@cosmjs/stargate";
-import { CometClient, connectComet, HttpEndpoint, HttpProxyEndpoint } from "@cosmjs/tendermint-rpc";
-import { assert, assertDefined } from "@cosmjs/utils";
+} from "@filosof-copilot-cosmjs/stargate";
+import { CometClient, connectComet, HttpEndpoint, HttpProxyEndpoint } from "@filosof-copilot-cosmjs/tendermint-rpc";
+import { assert, assertDefined } from "@filosof-copilot-cosmjs/utils";
 import { MsgWithdrawDelegatorReward } from "cosmjs-types/cosmos/distribution/v1beta1/tx";
 import { MsgDelegate, MsgUndelegate } from "cosmjs-types/cosmos/staking/v1beta1/tx";
 import { SignMode } from "cosmjs-types/cosmos/tx/signing/v1beta1/signing";

@@ -1,6 +1,6 @@
-import { fromBase64, fromBech32, fromHex, toBase64, toBech32, toHex } from "@cosmjs/encoding";
-import { Uint53 } from "@cosmjs/math";
-import { arrayContentStartsWith } from "@cosmjs/utils";
+import { fromBase64, fromBech32, fromHex, toBase64, toBech32, toHex } from "@filosof-copilot-cosmjs/encoding";
+import { Uint53 } from "@filosof-copilot-cosmjs/math";
+import { arrayContentStartsWith } from "@filosof-copilot-cosmjs/utils";
 
 import {
   Ed25519Pubkey,

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { omitDefault } from "@cosmjs/amino";
-import { fromBase64, fromUtf8, toBase64, toUtf8 } from "@cosmjs/encoding";
-import { AminoConverters, Coin } from "@cosmjs/stargate";
+import { omitDefault } from "@filosof-copilot-cosmjs/amino";
+import { fromBase64, fromUtf8, toBase64, toUtf8 } from "@filosof-copilot-cosmjs/encoding";
+import { AminoConverters, Coin } from "@filosof-copilot-cosmjs/stargate";
 import {
   MsgClearAdmin,
   MsgExecuteContract,

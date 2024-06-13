@@ -1,6 +1,6 @@
-import { pathToString } from "@cosmjs/crypto";
-import { DirectSecp256k1HdWallet, OfflineSigner } from "@cosmjs/proto-signing";
-import { SigningStargateClient } from "@cosmjs/stargate";
+import { pathToString } from "@filosof-copilot-cosmjs/crypto";
+import { DirectSecp256k1HdWallet, OfflineSigner } from "@filosof-copilot-cosmjs/proto-signing";
+import { SigningStargateClient } from "@filosof-copilot-cosmjs/stargate";
 
 import { PathBuilder } from "./pathbuilder";
 

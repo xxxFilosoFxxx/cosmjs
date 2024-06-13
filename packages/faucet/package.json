@@ -1,5 +1,5 @@
 {
-  "name": "@cosmjs/faucet",
+  "name": "@filosof-copilot-cosmjs/faucet",
   "version": "0.32.3",
   "description": "The faucet",
   "contributors": [
@@ -41,12 +41,12 @@
     "pack-node": "yarn build-or-skip && webpack --mode production --config webpack.node.config.js"
   },
   "dependencies": {
-    "@cosmjs/crypto": "workspace:^",
-    "@cosmjs/encoding": "workspace:^",
-    "@cosmjs/math": "workspace:^",
-    "@cosmjs/proto-signing": "workspace:^",
-    "@cosmjs/stargate": "workspace:^",
-    "@cosmjs/utils": "workspace:^",
+    "@filosof-copilot-cosmjs/crypto": "workspace:^",
+    "@filosof-copilot-cosmjs/encoding": "workspace:^",
+    "@filosof-copilot-cosmjs/math": "workspace:^",
+    "@filosof-copilot-cosmjs/proto-signing": "workspace:^",
+    "@filosof-copilot-cosmjs/stargate": "workspace:^",
+    "@filosof-copilot-cosmjs/utils": "workspace:^",
     "@koa/cors": "^3.3",
     "koa": "^2.13",
     "koa-bodyparser": "^4.3"

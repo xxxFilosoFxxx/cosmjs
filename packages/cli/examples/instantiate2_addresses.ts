@@ -1,5 +1,5 @@
-import { fromBech32, fromHex, toBech32, toHex, toUtf8 } from "@cosmjs/encoding";
-import { _instantiate2AddressIntermediate } from "@cosmjs/cosmwasm-stargate";
+import { fromBech32, fromHex, toBech32, toHex, toUtf8 } from "@filosof-copilot-cosmjs/encoding";
+import { _instantiate2AddressIntermediate } from "@filosof-copilot-cosmjs/cosmwasm-stargate";
 
 function makeTestingAddress(length: number): string {
   let data = new Uint8Array(length);

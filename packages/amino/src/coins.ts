@@ -1,4 +1,4 @@
-import { Decimal, Uint53 } from "@cosmjs/math";
+import { Decimal, Uint53 } from "@filosof-copilot-cosmjs/math";
 
 export interface Coin {
   readonly denom: string;

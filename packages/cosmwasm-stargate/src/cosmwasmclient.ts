@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { fromUtf8, toHex } from "@cosmjs/encoding";
-import { Uint53 } from "@cosmjs/math";
+import { fromUtf8, toHex } from "@filosof-copilot-cosmjs/encoding";
+import { Uint53 } from "@filosof-copilot-cosmjs/math";
 import {
   Account,
   accountFromAny,
@@ -21,15 +21,15 @@ import {
   setupTxExtension,
   TimeoutError,
   TxExtension,
-} from "@cosmjs/stargate";
+} from "@filosof-copilot-cosmjs/stargate";
 import {
   CometClient,
   connectComet,
   HttpEndpoint,
   HttpProxyEndpoint,
   toRfc3339WithNanoseconds,
-} from "@cosmjs/tendermint-rpc";
-import { assert, sleep } from "@cosmjs/utils";
+} from "@filosof-copilot-cosmjs/tendermint-rpc";
+import { assert, sleep } from "@filosof-copilot-cosmjs/utils";
 import { TxMsgData } from "cosmjs-types/cosmos/base/abci/v1beta1/abci";
 import {
   CodeInfoResponse,

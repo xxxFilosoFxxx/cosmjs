@@ -1,5 +1,5 @@
-import { fromUtf8 } from "@cosmjs/encoding";
-import { tendermint34, tendermint37 } from "@cosmjs/tendermint-rpc";
+import { fromUtf8 } from "@filosof-copilot-cosmjs/encoding";
+import { tendermint34, tendermint37 } from "@filosof-copilot-cosmjs/tendermint-rpc";
 
 /**
  * An event attribute.

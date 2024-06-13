@@ -1572,7 +1572,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],\
       [\
         "https-proxy-agent",\
-        "npm:5.0.0"\
+        "npm:7.0.4"\
       ],\
       [\
         "human-signals",\
@@ -2731,6 +2731,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       [\
         "unbox-primitive",\
         "npm:1.0.1"\
+      ],\
+      [\
+        "undici",\
+        "npm:6.18.2"\
       ],\
       [\
         "unique-filename",\
@@ -3932,6 +3936,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-simple-import-sort", "virtual:4f1584ad4aba8733a24be7c8aebbffafef25607f2d00f4b314cf96717145c692763628a31c2b85d4686fbb091ff21ebffa3cc337399c042c19a32b9bdb786464#npm:7.0.0"],\
             ["esm", "npm:3.2.25"],\
             ["glob", "npm:7.2.0"],\
+            ["https-proxy-agent", "npm:7.0.4"],\
             ["jasmine", "npm:4.6.0"],\
             ["jasmine-spec-reporter", "npm:6.0.0"],\
             ["karma", "npm:6.3.16"],\
@@ -3947,6 +3952,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ts-node", "virtual:4f1584ad4aba8733a24be7c8aebbffafef25607f2d00f4b314cf96717145c692763628a31c2b85d4686fbb091ff21ebffa3cc337399c042c19a32b9bdb786464#npm:8.10.2"],\
             ["typedoc", "virtual:4f1584ad4aba8733a24be7c8aebbffafef25607f2d00f4b314cf96717145c692763628a31c2b85d4686fbb091ff21ebffa3cc337399c042c19a32b9bdb786464#npm:0.23.28"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"],\
+            ["undici", "npm:6.18.2"],\
             ["webpack", "virtual:7bcfa345571c06768a3dbc91a42526f0822237866e2d9cb58705577be6cb39fb02f8c1251069bcf70d11a05dfde2de19f521968b6f5d0f6652f231deb4bdab09#npm:5.76.1"],\
             ["webpack-cli", "virtual:7bcfa345571c06768a3dbc91a42526f0822237866e2d9cb58705577be6cb39fb02f8c1251069bcf70d11a05dfde2de19f521968b6f5d0f6652f231deb4bdab09#npm:4.7.0"],\
             ["xstream", "npm:11.14.0"]\
@@ -6203,6 +6209,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["agent-base", "npm:6.0.2"],\
             ["debug", "virtual:6d7ba8035a34a8cbc48e227f3e803dbc3acaabbab2521c3cd66a45a2853fa6bda5b3ccb3ab1942c8a738927bc0e228ea8d5baa6461d73e2cf6a345db629c4f47#npm:4.3.3"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:7.1.1", {\
+          "packageLocation": "./.yarn/cache/agent-base-npm-7.1.1-c9e1a4b59e-51c158769c.zip/node_modules/agent-base/",\
+          "packageDependencies": [\
+            ["agent-base", "npm:7.1.1"],\
+            ["debug", "virtual:2e8b63b9512ee302c1e69bb1e3512d620971815ee605065d20bed52f3459d2253d5150a129382f41fb46f2eed830a5b8af9f8e7a56e0fbdf246de03604209ab2#npm:4.3.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8918,6 +8932,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["https-proxy-agent", "npm:5.0.0"],\
             ["agent-base", "npm:6.0.2"],\
+            ["debug", "virtual:6d7ba8035a34a8cbc48e227f3e803dbc3acaabbab2521c3cd66a45a2853fa6bda5b3ccb3ab1942c8a738927bc0e228ea8d5baa6461d73e2cf6a345db629c4f47#npm:4.3.3"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:7.0.4", {\
+          "packageLocation": "./.yarn/cache/https-proxy-agent-npm-7.0.4-a51e13f5dc-daaab857a9.zip/node_modules/https-proxy-agent/",\
+          "packageDependencies": [\
+            ["https-proxy-agent", "npm:7.0.4"],\
+            ["agent-base", "npm:7.1.1"],\
             ["debug", "virtual:6d7ba8035a34a8cbc48e227f3e803dbc3acaabbab2521c3cd66a45a2853fa6bda5b3ccb3ab1942c8a738927bc0e228ea8d5baa6461d73e2cf6a345db629c4f47#npm:4.3.3"]\
           ],\
           "linkType": "HARD"\
@@ -12917,6 +12940,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["has-bigints", "npm:1.0.1"],\
             ["has-symbols", "npm:1.0.2"],\
             ["which-boxed-primitive", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["undici", [\
+        ["npm:6.18.2", {\
+          "packageLocation": "./.yarn/cache/undici-npm-6.18.2-c1115b72ab-c20e47bd4f.zip/node_modules/undici/",\
+          "packageDependencies": [\
+            ["undici", "npm:6.18.2"]\
           ],\
           "linkType": "HARD"\
         }]\

@@ -1,9 +1,9 @@
 # This is a hand written dependencies file for depsight
 # Render via `depsight --format png --output stargate-dependencies.png docs/stargate-dependencies.yml`
 
-"@cosmjs/stargate":
-- "@cosmjs/tendermint-rpc"
-- "@cosmjs/proto-signing"
+"@filosof-copilot-cosmjs/stargate":
+- "@filosof-copilot-cosmjs/tendermint-rpc"
+- "@filosof-copilot-cosmjs/proto-signing"
 
-"@cosmjs/proto-signing":
+"@filosof-copilot-cosmjs/proto-signing":
 - "protobufjs"

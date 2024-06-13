@@ -289,14 +289,38 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cosmjs/amino@workspace:^, @cosmjs/amino@workspace:packages/amino":
-  version: 0.0.0-use.local
-  resolution: "@cosmjs/amino@workspace:packages/amino"
+"@discoveryjs/json-ext@npm:^0.5.0":
+  version: 0.5.3
+  resolution: "@discoveryjs/json-ext@npm:0.5.3"
+  checksum: fea319569f9894391ff1ddb5f59f9dfebe611ac202e7e97d9719ff9f7a726388e6a0a7e5ae8e54cf009ae1748269760d5842bfda5b9cbf834ceda28711baf89d
+  languageName: node
+  linkType: hard
+
+"@eslint/eslintrc@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "@eslint/eslintrc@npm:0.4.1"
   dependencies:
-    "@cosmjs/crypto": "workspace:^"
-    "@cosmjs/encoding": "workspace:^"
-    "@cosmjs/math": "workspace:^"
-    "@cosmjs/utils": "workspace:^"
+    ajv: ^6.12.4
+    debug: ^4.1.1
+    espree: ^7.3.0
+    globals: ^12.1.0
+    ignore: ^4.0.6
+    import-fresh: ^3.2.1
+    js-yaml: ^3.13.1
+    minimatch: ^3.0.4
+    strip-json-comments: ^3.1.1
+  checksum: 85eeaa022eba510ff093040a66e67bf0b4c5e5aa8c39e3655e4fa6de929d1076e2320858325708b723b367d8aeaddd89e6fa5b34c8676a4d95246d099e1b1759
+  languageName: node
+  linkType: hard
+
+"@filosof-copilot-cosmjs/amino@workspace:^, @filosof-copilot-cosmjs/amino@workspace:packages/amino":
+  version: 0.0.0-use.local
+  resolution: "@filosof-copilot-cosmjs/amino@workspace:packages/amino"
+  dependencies:
+    "@filosof-copilot-cosmjs/crypto": "workspace:^"
+    "@filosof-copilot-cosmjs/encoding": "workspace:^"
+    "@filosof-copilot-cosmjs/math": "workspace:^"
+    "@filosof-copilot-cosmjs/utils": "workspace:^"
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@types/eslint-plugin-prettier": ^3
     "@types/jasmine": ^4
@@ -332,20 +356,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cosmjs/cli@workspace:packages/cli":
+"@filosof-copilot-cosmjs/cli@workspace:packages/cli":
   version: 0.0.0-use.local
-  resolution: "@cosmjs/cli@workspace:packages/cli"
+  resolution: "@filosof-copilot-cosmjs/cli@workspace:packages/cli"
   dependencies:
-    "@cosmjs/amino": "workspace:^"
-    "@cosmjs/cosmwasm-stargate": "workspace:^"
-    "@cosmjs/crypto": "workspace:^"
-    "@cosmjs/encoding": "workspace:^"
-    "@cosmjs/faucet-client": "workspace:^"
-    "@cosmjs/math": "workspace:^"
-    "@cosmjs/proto-signing": "workspace:^"
-    "@cosmjs/stargate": "workspace:^"
-    "@cosmjs/tendermint-rpc": "workspace:^"
-    "@cosmjs/utils": "workspace:^"
+    "@filosof-copilot-cosmjs/amino": "workspace:^"
+    "@filosof-copilot-cosmjs/cosmwasm-stargate": "workspace:^"
+    "@filosof-copilot-cosmjs/crypto": "workspace:^"
+    "@filosof-copilot-cosmjs/encoding": "workspace:^"
+    "@filosof-copilot-cosmjs/faucet-client": "workspace:^"
+    "@filosof-copilot-cosmjs/math": "workspace:^"
+    "@filosof-copilot-cosmjs/proto-signing": "workspace:^"
+    "@filosof-copilot-cosmjs/stargate": "workspace:^"
+    "@filosof-copilot-cosmjs/tendermint-rpc": "workspace:^"
+    "@filosof-copilot-cosmjs/utils": "workspace:^"
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@types/babylon": ^6.16.3
     "@types/diff": ^4
@@ -381,18 +405,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cosmjs/cosmwasm-stargate@workspace:^, @cosmjs/cosmwasm-stargate@workspace:packages/cosmwasm-stargate":
+"@filosof-copilot-cosmjs/cosmwasm-stargate@workspace:^, @filosof-copilot-cosmjs/cosmwasm-stargate@workspace:packages/cosmwasm-stargate":
   version: 0.0.0-use.local
-  resolution: "@cosmjs/cosmwasm-stargate@workspace:packages/cosmwasm-stargate"
+  resolution: "@filosof-copilot-cosmjs/cosmwasm-stargate@workspace:packages/cosmwasm-stargate"
   dependencies:
-    "@cosmjs/amino": "workspace:^"
-    "@cosmjs/crypto": "workspace:^"
-    "@cosmjs/encoding": "workspace:^"
-    "@cosmjs/math": "workspace:^"
-    "@cosmjs/proto-signing": "workspace:^"
-    "@cosmjs/stargate": "workspace:^"
-    "@cosmjs/tendermint-rpc": "workspace:^"
-    "@cosmjs/utils": "workspace:^"
+    "@filosof-copilot-cosmjs/amino": "workspace:^"
+    "@filosof-copilot-cosmjs/crypto": "workspace:^"
+    "@filosof-copilot-cosmjs/encoding": "workspace:^"
+    "@filosof-copilot-cosmjs/math": "workspace:^"
+    "@filosof-copilot-cosmjs/proto-signing": "workspace:^"
+    "@filosof-copilot-cosmjs/stargate": "workspace:^"
+    "@filosof-copilot-cosmjs/tendermint-rpc": "workspace:^"
+    "@filosof-copilot-cosmjs/utils": "workspace:^"
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@types/eslint-plugin-prettier": ^3
     "@types/jasmine": ^4
@@ -434,13 +458,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cosmjs/crypto@workspace:^, @cosmjs/crypto@workspace:packages/crypto":
+"@filosof-copilot-cosmjs/crypto@workspace:^, @filosof-copilot-cosmjs/crypto@workspace:packages/crypto":
   version: 0.0.0-use.local
-  resolution: "@cosmjs/crypto@workspace:packages/crypto"
+  resolution: "@filosof-copilot-cosmjs/crypto@workspace:packages/crypto"
   dependencies:
-    "@cosmjs/encoding": "workspace:^"
-    "@cosmjs/math": "workspace:^"
-    "@cosmjs/utils": "workspace:^"
+    "@filosof-copilot-cosmjs/encoding": "workspace:^"
+    "@filosof-copilot-cosmjs/math": "workspace:^"
+    "@filosof-copilot-cosmjs/utils": "workspace:^"
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@noble/hashes": ^1
     "@types/bn.js": ^5
@@ -485,9 +509,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cosmjs/encoding@workspace:^, @cosmjs/encoding@workspace:packages/encoding":
+"@filosof-copilot-cosmjs/encoding@workspace:^, @filosof-copilot-cosmjs/encoding@workspace:packages/encoding":
   version: 0.0.0-use.local
-  resolution: "@cosmjs/encoding@workspace:packages/encoding"
+  resolution: "@filosof-copilot-cosmjs/encoding@workspace:packages/encoding"
   dependencies:
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@types/base64-js": ^1.2.5
@@ -529,9 +553,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cosmjs/faucet-client@workspace:^, @cosmjs/faucet-client@workspace:packages/faucet-client":
+"@filosof-copilot-cosmjs/faucet-client@workspace:^, @filosof-copilot-cosmjs/faucet-client@workspace:packages/faucet-client":
   version: 0.0.0-use.local
-  resolution: "@cosmjs/faucet-client@workspace:packages/faucet-client"
+  resolution: "@filosof-copilot-cosmjs/faucet-client@workspace:packages/faucet-client"
   dependencies:
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@types/eslint-plugin-prettier": ^3
@@ -570,16 +594,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cosmjs/faucet@workspace:packages/faucet":
+"@filosof-copilot-cosmjs/faucet@workspace:packages/faucet":
   version: 0.0.0-use.local
-  resolution: "@cosmjs/faucet@workspace:packages/faucet"
+  resolution: "@filosof-copilot-cosmjs/faucet@workspace:packages/faucet"
   dependencies:
-    "@cosmjs/crypto": "workspace:^"
-    "@cosmjs/encoding": "workspace:^"
-    "@cosmjs/math": "workspace:^"
-    "@cosmjs/proto-signing": "workspace:^"
-    "@cosmjs/stargate": "workspace:^"
-    "@cosmjs/utils": "workspace:^"
+    "@filosof-copilot-cosmjs/crypto": "workspace:^"
+    "@filosof-copilot-cosmjs/encoding": "workspace:^"
+    "@filosof-copilot-cosmjs/math": "workspace:^"
+    "@filosof-copilot-cosmjs/proto-signing": "workspace:^"
+    "@filosof-copilot-cosmjs/stargate": "workspace:^"
+    "@filosof-copilot-cosmjs/utils": "workspace:^"
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@koa/cors": ^3.3
     "@types/eslint-plugin-prettier": ^3
@@ -613,11 +637,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cosmjs/json-rpc@workspace:^, @cosmjs/json-rpc@workspace:packages/json-rpc":
+"@filosof-copilot-cosmjs/json-rpc@workspace:^, @filosof-copilot-cosmjs/json-rpc@workspace:packages/json-rpc":
   version: 0.0.0-use.local
-  resolution: "@cosmjs/json-rpc@workspace:packages/json-rpc"
+  resolution: "@filosof-copilot-cosmjs/json-rpc@workspace:packages/json-rpc"
   dependencies:
-    "@cosmjs/stream": "workspace:^"
+    "@filosof-copilot-cosmjs/stream": "workspace:^"
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@types/eslint-plugin-prettier": ^3
     "@types/jasmine": ^4
@@ -654,16 +678,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cosmjs/ledger-amino@workspace:packages/ledger-amino":
+"@filosof-copilot-cosmjs/ledger-amino@workspace:packages/ledger-amino":
   version: 0.0.0-use.local
-  resolution: "@cosmjs/ledger-amino@workspace:packages/ledger-amino"
+  resolution: "@filosof-copilot-cosmjs/ledger-amino@workspace:packages/ledger-amino"
   dependencies:
-    "@cosmjs/amino": "workspace:^"
-    "@cosmjs/crypto": "workspace:^"
-    "@cosmjs/encoding": "workspace:^"
-    "@cosmjs/math": "workspace:^"
-    "@cosmjs/stargate": "workspace:^"
-    "@cosmjs/utils": "workspace:^"
+    "@filosof-copilot-cosmjs/amino": "workspace:^"
+    "@filosof-copilot-cosmjs/crypto": "workspace:^"
+    "@filosof-copilot-cosmjs/encoding": "workspace:^"
+    "@filosof-copilot-cosmjs/math": "workspace:^"
+    "@filosof-copilot-cosmjs/stargate": "workspace:^"
+    "@filosof-copilot-cosmjs/utils": "workspace:^"
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@ledgerhq/hw-transport": ^5.25.0
     "@ledgerhq/hw-transport-node-hid": ^5.25.0
@@ -700,9 +724,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cosmjs/math@workspace:^, @cosmjs/math@workspace:packages/math":
+"@filosof-copilot-cosmjs/math@workspace:^, @filosof-copilot-cosmjs/math@workspace:packages/math":
   version: 0.0.0-use.local
-  resolution: "@cosmjs/math@workspace:packages/math"
+  resolution: "@filosof-copilot-cosmjs/math@workspace:packages/math"
   dependencies:
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@types/bn.js": ^5
@@ -742,15 +766,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cosmjs/proto-signing@workspace:^, @cosmjs/proto-signing@workspace:packages/proto-signing":
+"@filosof-copilot-cosmjs/proto-signing@workspace:^, @filosof-copilot-cosmjs/proto-signing@workspace:packages/proto-signing":
   version: 0.0.0-use.local
-  resolution: "@cosmjs/proto-signing@workspace:packages/proto-signing"
+  resolution: "@filosof-copilot-cosmjs/proto-signing@workspace:packages/proto-signing"
   dependencies:
-    "@cosmjs/amino": "workspace:^"
-    "@cosmjs/crypto": "workspace:^"
-    "@cosmjs/encoding": "workspace:^"
-    "@cosmjs/math": "workspace:^"
-    "@cosmjs/utils": "workspace:^"
+    "@filosof-copilot-cosmjs/amino": "workspace:^"
+    "@filosof-copilot-cosmjs/crypto": "workspace:^"
+    "@filosof-copilot-cosmjs/encoding": "workspace:^"
+    "@filosof-copilot-cosmjs/math": "workspace:^"
+    "@filosof-copilot-cosmjs/utils": "workspace:^"
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@types/eslint-plugin-prettier": ^3
     "@types/jasmine": ^4
@@ -790,11 +814,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cosmjs/socket@workspace:^, @cosmjs/socket@workspace:packages/socket":
+"@filosof-copilot-cosmjs/socket@workspace:^, @filosof-copilot-cosmjs/socket@workspace:packages/socket":
   version: 0.0.0-use.local
-  resolution: "@cosmjs/socket@workspace:packages/socket"
+  resolution: "@filosof-copilot-cosmjs/socket@workspace:packages/socket"
   dependencies:
-    "@cosmjs/stream": "workspace:^"
+    "@filosof-copilot-cosmjs/stream": "workspace:^"
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@types/eslint-plugin-prettier": ^3
     "@types/jasmine": ^4
@@ -834,19 +858,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cosmjs/stargate@workspace:^, @cosmjs/stargate@workspace:packages/stargate":
+"@filosof-copilot-cosmjs/stargate@workspace:^, @filosof-copilot-cosmjs/stargate@workspace:packages/stargate":
   version: 0.0.0-use.local
-  resolution: "@cosmjs/stargate@workspace:packages/stargate"
+  resolution: "@filosof-copilot-cosmjs/stargate@workspace:packages/stargate"
   dependencies:
     "@confio/ics23": ^0.6.8
-    "@cosmjs/amino": "workspace:^"
-    "@cosmjs/crypto": "workspace:^"
-    "@cosmjs/encoding": "workspace:^"
-    "@cosmjs/math": "workspace:^"
-    "@cosmjs/proto-signing": "workspace:^"
-    "@cosmjs/stream": "workspace:^"
-    "@cosmjs/tendermint-rpc": "workspace:^"
-    "@cosmjs/utils": "workspace:^"
+    "@filosof-copilot-cosmjs/amino": "workspace:^"
+    "@filosof-copilot-cosmjs/crypto": "workspace:^"
+    "@filosof-copilot-cosmjs/encoding": "workspace:^"
+    "@filosof-copilot-cosmjs/math": "workspace:^"
+    "@filosof-copilot-cosmjs/proto-signing": "workspace:^"
+    "@filosof-copilot-cosmjs/stream": "workspace:^"
+    "@filosof-copilot-cosmjs/tendermint-rpc": "workspace:^"
+    "@filosof-copilot-cosmjs/utils": "workspace:^"
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@types/eslint-plugin-prettier": ^3
     "@types/jasmine": ^4
@@ -887,9 +911,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cosmjs/stream@workspace:^, @cosmjs/stream@workspace:packages/stream":
+"@filosof-copilot-cosmjs/stream@workspace:^, @filosof-copilot-cosmjs/stream@workspace:packages/stream":
   version: 0.0.0-use.local
-  resolution: "@cosmjs/stream@workspace:packages/stream"
+  resolution: "@filosof-copilot-cosmjs/stream@workspace:packages/stream"
   dependencies:
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@types/eslint-plugin-prettier": ^3
@@ -928,17 +952,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cosmjs/tendermint-rpc@workspace:^, @cosmjs/tendermint-rpc@workspace:packages/tendermint-rpc":
+"@filosof-copilot-cosmjs/tendermint-rpc@workspace:^, @filosof-copilot-cosmjs/tendermint-rpc@workspace:packages/tendermint-rpc":
   version: 0.0.0-use.local
-  resolution: "@cosmjs/tendermint-rpc@workspace:packages/tendermint-rpc"
+  resolution: "@filosof-copilot-cosmjs/tendermint-rpc@workspace:packages/tendermint-rpc"
   dependencies:
-    "@cosmjs/crypto": "workspace:^"
-    "@cosmjs/encoding": "workspace:^"
-    "@cosmjs/json-rpc": "workspace:^"
-    "@cosmjs/math": "workspace:^"
-    "@cosmjs/socket": "workspace:^"
-    "@cosmjs/stream": "workspace:^"
-    "@cosmjs/utils": "workspace:^"
+    "@filosof-copilot-cosmjs/crypto": "workspace:^"
+    "@filosof-copilot-cosmjs/encoding": "workspace:^"
+    "@filosof-copilot-cosmjs/json-rpc": "workspace:^"
+    "@filosof-copilot-cosmjs/math": "workspace:^"
+    "@filosof-copilot-cosmjs/socket": "workspace:^"
+    "@filosof-copilot-cosmjs/stream": "workspace:^"
+    "@filosof-copilot-cosmjs/utils": "workspace:^"
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@types/eslint-plugin-prettier": ^3
     "@types/jasmine": ^4
@@ -980,9 +1004,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cosmjs/utils@workspace:^, @cosmjs/utils@workspace:packages/utils":
+"@filosof-copilot-cosmjs/utils@workspace:^, @filosof-copilot-cosmjs/utils@workspace:packages/utils":
   version: 0.0.0-use.local
-  resolution: "@cosmjs/utils@workspace:packages/utils"
+  resolution: "@filosof-copilot-cosmjs/utils@workspace:packages/utils"
   dependencies:
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@types/eslint-plugin-prettier": ^3
@@ -1020,30 +1044,6 @@ __metadata:
     webpack-cli: ^4.6.0
   languageName: unknown
   linkType: soft
-
-"@discoveryjs/json-ext@npm:^0.5.0":
-  version: 0.5.3
-  resolution: "@discoveryjs/json-ext@npm:0.5.3"
-  checksum: fea319569f9894391ff1ddb5f59f9dfebe611ac202e7e97d9719ff9f7a726388e6a0a7e5ae8e54cf009ae1748269760d5842bfda5b9cbf834ceda28711baf89d
-  languageName: node
-  linkType: hard
-
-"@eslint/eslintrc@npm:^0.4.1":
-  version: 0.4.1
-  resolution: "@eslint/eslintrc@npm:0.4.1"
-  dependencies:
-    ajv: ^6.12.4
-    debug: ^4.1.1
-    espree: ^7.3.0
-    globals: ^12.1.0
-    ignore: ^4.0.6
-    import-fresh: ^3.2.1
-    js-yaml: ^3.13.1
-    minimatch: ^3.0.4
-    strip-json-comments: ^3.1.1
-  checksum: 85eeaa022eba510ff093040a66e67bf0b4c5e5aa8c39e3655e4fa6de929d1076e2320858325708b723b367d8aeaddd89e6fa5b34c8676a4d95246d099e1b1759
-  languageName: node
-  linkType: hard
 
 "@isaacs/cliui@npm:^8.0.2":
   version: 8.0.2
@@ -3100,12 +3100,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "cosmjs-monorepo-root@workspace:."
   dependencies:
-    "@cosmjs/amino": "workspace:^"
-    "@cosmjs/cosmwasm-stargate": "workspace:^"
-    "@cosmjs/crypto": "workspace:^"
-    "@cosmjs/encoding": "workspace:^"
-    "@cosmjs/proto-signing": "workspace:^"
-    "@cosmjs/stargate": "workspace:^"
+    "@filosof-copilot-cosmjs/amino": "workspace:^"
+    "@filosof-copilot-cosmjs/cosmwasm-stargate": "workspace:^"
+    "@filosof-copilot-cosmjs/crypto": "workspace:^"
+    "@filosof-copilot-cosmjs/encoding": "workspace:^"
+    "@filosof-copilot-cosmjs/proto-signing": "workspace:^"
+    "@filosof-copilot-cosmjs/stargate": "workspace:^"
     eslint: ^7.5
     prettier: ^2.8.8
     typescript: ~4.9

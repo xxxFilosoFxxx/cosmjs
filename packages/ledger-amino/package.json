@@ -46,7 +46,7 @@
     "semver": "^7.5.2"
   },
   "devDependencies": {
-    "@cosmjs/stargate": "workspace:^",
+    "@filosof-copilot-cosmjs/stargate": "workspace:^",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@ledgerhq/hw-transport": "^5.25.0",
     "@ledgerhq/hw-transport-node-hid": "^5.25.0",

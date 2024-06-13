@@ -1,5 +1,5 @@
 {
-  "name": "@cosmjs/tendermint-rpc",
+  "name": "@filosof-copilot-cosmjs/tendermint-rpc",
   "version": "0.32.3",
   "description": "Tendermint RPC clients",
   "contributors": [

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { AminoMsg, Coin } from "@cosmjs/amino";
+import { AminoMsg, Coin } from "@filosof-copilot-cosmjs/amino";
 import {
   MsgFundCommunityPool,
   MsgSetWithdrawAddress,

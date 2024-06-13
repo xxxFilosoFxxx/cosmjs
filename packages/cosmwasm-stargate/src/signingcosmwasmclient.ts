@@ -32,7 +32,7 @@ import {
   SignerData,
   StdFee,
 } from "@cosmjs/stargate";
-import { CometClient, connectComet, HttpEndpoint } from "@cosmjs/tendermint-rpc";
+import { CometClient, connectComet, HttpEndpoint, HttpProxyEndpoint } from "@cosmjs/tendermint-rpc";
 import { assert, assertDefined } from "@cosmjs/utils";
 import { MsgWithdrawDelegatorReward } from "cosmjs-types/cosmos/distribution/v1beta1/tx";
 import { MsgDelegate, MsgUndelegate } from "cosmjs-types/cosmos/staking/v1beta1/tx";
@@ -210,7 +210,7 @@ export class SigningCosmWasmClient extends CosmWasmClient {
    * To set the Comet client explicitly, use `createWithSigner`.
    */
   public static async connectWithSigner(
-    endpoint: string | HttpEndpoint,
+    endpoint: string | HttpEndpoint | HttpProxyEndpoint,
     signer: OfflineSigner,
     options: SigningCosmWasmClientOptions = {},
   ): Promise<SigningCosmWasmClient> {

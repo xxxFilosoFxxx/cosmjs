@@ -5,6 +5,7 @@ import { createJsonRpcRequest } from "../jsonrpc";
 import {
   HttpClient,
   HttpEndpoint,
+  HttpProxyEndpoint,
   instanceOfRpcStreamingClient,
   RpcClient,
   SubscriptionEvent,
@@ -26,7 +27,9 @@ export class Tendermint34Client {
    *
    * Uses HTTP when the URL schema is http or https. Uses WebSockets otherwise.
    */
-  public static async connect(endpoint: string | HttpEndpoint): Promise<Tendermint34Client> {
+  public static async connect(
+    endpoint: string | HttpEndpoint | HttpProxyEndpoint,
+  ): Promise<Tendermint34Client> {
     let rpcClient: RpcClient;
     if (typeof endpoint === "object") {
       rpcClient = new HttpClient(endpoint);

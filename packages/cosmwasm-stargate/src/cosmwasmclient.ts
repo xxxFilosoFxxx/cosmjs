@@ -22,7 +22,13 @@ import {
   TimeoutError,
   TxExtension,
 } from "@cosmjs/stargate";
-import { CometClient, connectComet, HttpEndpoint, toRfc3339WithNanoseconds } from "@cosmjs/tendermint-rpc";
+import {
+  CometClient,
+  connectComet,
+  HttpEndpoint,
+  HttpProxyEndpoint,
+  toRfc3339WithNanoseconds,
+} from "@cosmjs/tendermint-rpc";
 import { assert, sleep } from "@cosmjs/utils";
 import { TxMsgData } from "cosmjs-types/cosmos/base/abci/v1beta1/abci";
 import {
@@ -96,7 +102,7 @@ export class CosmWasmClient {
    * This uses auto-detection to decide between a CometBFT 0.38, Tendermint 0.37 and 0.34 client.
    * To set the Comet client explicitly, use `create`.
    */
-  public static async connect(endpoint: string | HttpEndpoint): Promise<CosmWasmClient> {
+  public static async connect(endpoint: string | HttpEndpoint | HttpProxyEndpoint): Promise<CosmWasmClient> {
     const cometClient = await connectComet(endpoint);
     return CosmWasmClient.create(cometClient);
   }

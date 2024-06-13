@@ -1,4 +1,6 @@
 import axios from "axios";
+import { HttpsProxyAgent } from "https-proxy-agent";
+import { ProxyAgent } from "undici";
 
 // Global symbols in some environments
 // https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch
@@ -39,6 +41,7 @@ export async function http(
   url: string,
   headers: Record<string, string> | undefined,
   request?: any,
+  proxy?: string,
 ): Promise<any> {
   if (typeof fetch === "function" && !isExperimental(fetch)) {
     const settings = {
@@ -49,13 +52,21 @@ export async function http(
         "Content-Type": "application/json",
         ...headers,
       },
+      dispatcher: proxy ? (new ProxyAgent(proxy) as never) : undefined,
     };
     return fetch(url, settings)
       .then(filterBadStatus)
       .then((res: any) => res.json());
   } else {
     return axios
-      .request({ url: url, method: method, data: request, headers: headers })
+      .request({
+        url: url,
+        method: method,
+        data: request,
+        headers: headers,
+        httpAgent: proxy ? new HttpsProxyAgent(proxy) : undefined,
+        httpsAgent: proxy ? new HttpsProxyAgent(proxy) : undefined,
+      })
       .then((res) => res.data);
   }
 }

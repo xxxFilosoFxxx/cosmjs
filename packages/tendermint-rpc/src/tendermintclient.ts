@@ -1,5 +1,5 @@
 import { Comet38Client } from "./comet38";
-import { HttpEndpoint } from "./rpcclients";
+import { HttpEndpoint, HttpProxyEndpoint } from "./rpcclients";
 import { Tendermint34Client } from "./tendermint34";
 import { Tendermint37Client } from "./tendermint37";
 
@@ -28,7 +28,9 @@ export function isComet38Client(client: CometClient): client is Comet38Client {
 /**
  * Auto-detects the version of the backend and uses a suitable client.
  */
-export async function connectComet(endpoint: string | HttpEndpoint): Promise<CometClient> {
+export async function connectComet(
+  endpoint: string | HttpEndpoint | HttpProxyEndpoint,
+): Promise<CometClient> {
   // Tendermint/CometBFT 0.34/0.37/0.38 auto-detection. Starting with 0.37 we seem to get reliable versions again 🎉
   // Using 0.34 as the fallback.
   let out: CometClient;

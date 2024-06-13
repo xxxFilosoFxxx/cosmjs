@@ -6,7 +6,7 @@ import {
 } from "@cosmjs/json-rpc";
 
 import { http } from "./http";
-import { HttpEndpoint } from "./httpclient";
+import { HttpEndpoint, HttpProxyEndpoint } from "./httpclient";
 import { hasProtocol, RpcClient } from "./rpcclient";
 
 export interface HttpBatchClientOptions {
@@ -27,6 +27,7 @@ const defaultHttpBatchClientOptions: HttpBatchClientOptions = {
 export class HttpBatchClient implements RpcClient {
   protected readonly url: string;
   protected readonly headers: Record<string, string> | undefined;
+  protected readonly proxy: string | undefined;
   protected readonly options: HttpBatchClientOptions;
   private timer?: NodeJS.Timer;
 
@@ -36,7 +37,10 @@ export class HttpBatchClient implements RpcClient {
     reject: (a: Error) => void;
   }> = [];
 
-  public constructor(endpoint: string | HttpEndpoint, options: Partial<HttpBatchClientOptions> = {}) {
+  public constructor(
+    endpoint: string | HttpEndpoint | HttpProxyEndpoint,
+    options: Partial<HttpBatchClientOptions> = {},
+  ) {
     this.options = {
       batchSizeLimit: options.batchSizeLimit ?? defaultHttpBatchClientOptions.batchSizeLimit,
       dispatchInterval: options.dispatchInterval ?? defaultHttpBatchClientOptions.dispatchInterval,
@@ -48,7 +52,14 @@ export class HttpBatchClient implements RpcClient {
       this.url = endpoint;
     } else {
       this.url = endpoint.url;
-      this.headers = endpoint.headers;
+
+      if ("proxy" in endpoint) {
+        this.proxy = endpoint.proxy;
+      }
+
+      if ("headers" in endpoint) {
+        this.headers = endpoint.headers;
+      }
     }
     this.timer = setInterval(() => this.tick(), options.dispatchInterval);
     this.validate();
@@ -93,7 +104,7 @@ export class HttpBatchClient implements RpcClient {
     const requests = batch.map((s) => s.request);
     const requestIds = requests.map((request) => request.id);
 
-    http("POST", this.url, this.headers, requests).then(
+    http("POST", this.url, this.headers, requests, this.proxy).then(
       (raw) => {
         // Requests with a single entry return as an object
         const arr = Array.isArray(raw) ? raw : [raw];

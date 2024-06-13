@@ -22,11 +22,16 @@ export interface HttpEndpoint {
   readonly headers: Record<string, string>;
 }
 
+export interface HttpProxyEndpoint extends Pick<HttpEndpoint, "url"> {
+  readonly proxy?: string;
+}
+
 export class HttpClient implements RpcClient {
   protected readonly url: string;
   protected readonly headers: Record<string, string> | undefined;
+  protected readonly proxy: string | undefined;
 
-  public constructor(endpoint: string | HttpEndpoint) {
+  public constructor(endpoint: string | HttpEndpoint | HttpProxyEndpoint) {
     if (typeof endpoint === "string") {
       if (!hasProtocol(endpoint)) {
         throw new Error("Endpoint URL is missing a protocol. Expected 'https://' or 'http://'.");
@@ -34,7 +39,14 @@ export class HttpClient implements RpcClient {
       this.url = endpoint;
     } else {
       this.url = endpoint.url;
-      this.headers = endpoint.headers;
+
+      if ("proxy" in endpoint) {
+        this.proxy = endpoint.proxy;
+      }
+
+      if ("headers" in endpoint) {
+        this.headers = endpoint.headers;
+      }
     }
   }
 
@@ -43,7 +55,7 @@ export class HttpClient implements RpcClient {
   }
 
   public async execute(request: JsonRpcRequest): Promise<JsonRpcSuccessResponse> {
-    const response = parseJsonRpcResponse(await http("POST", this.url, this.headers, request));
+    const response = parseJsonRpcResponse(await http("POST", this.url, this.headers, request, this.proxy));
     if (isJsonRpcErrorResponse(response)) {
       throw new Error(JSON.stringify(response.error));
     }

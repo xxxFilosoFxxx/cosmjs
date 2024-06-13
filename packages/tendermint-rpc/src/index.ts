@@ -22,6 +22,7 @@ export {
   HttpBatchClientOptions,
   HttpClient,
   HttpEndpoint, // This type is part of the Tendermint34Client.connect API
+  HttpProxyEndpoint,
   RpcClient, // Interface type in Tendermint34Client.create
   WebsocketClient,
 } from "./rpcclients";

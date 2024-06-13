@@ -12,7 +12,7 @@ import {
   Registry,
   TxBodyEncodeObject,
 } from "@cosmjs/proto-signing";
-import { CometClient, connectComet, HttpEndpoint } from "@cosmjs/tendermint-rpc";
+import { CometClient, connectComet, HttpEndpoint, HttpProxyEndpoint } from "@cosmjs/tendermint-rpc";
 import { assert, assertDefined } from "@cosmjs/utils";
 import { Coin } from "cosmjs-types/cosmos/base/v1beta1/coin";
 import { MsgWithdrawDelegatorReward } from "cosmjs-types/cosmos/distribution/v1beta1/tx";
@@ -118,7 +118,7 @@ export class SigningStargateClient extends StargateClient {
    * To set the Comet client explicitly, use `createWithSigner`.
    */
   public static async connectWithSigner(
-    endpoint: string | HttpEndpoint,
+    endpoint: string | HttpEndpoint | HttpProxyEndpoint,
     signer: OfflineSigner,
     options: SigningStargateClientOptions = {},
   ): Promise<SigningStargateClient> {
